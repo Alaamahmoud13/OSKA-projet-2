@@ -1,0 +1,143 @@
+:root {
+    --main-color: #ff206e;
+}
+
+body {
+    font-family: 'segoe ui light';
+    /* overflow-y: hidden; */
+}
+#loading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #222;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loading i{
+    color: #fff;
+    font-size: 33px;
+}
+
+#main-nav {
+    transition: background-color 1s;
+}
+
+
+.text-main {
+    color: var(--main-color);
+    
+}
+
+.home {
+    background-image: url(../images//bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.title h2,
+.title h3 {
+    letter-spacing: 3px;
+    font-weight: 800;
+
+}
+
+.title h2 {
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+
+.title h3 {
+    font-size: 2.5rem;
+}
+#btnUp{
+    background-color: var(--main-color);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    display: none;
+    z-index: 1000;
+}
+#btnUp{
+    color: #fff;
+}
+
+#about {
+    background-image: url(../images/light_dot.jpg);
+}
+
+#servises {
+    background-image: url(../images/dark_dot.jpg);
+    /* background-size: cover; */
+    background-position: center center;
+}
+
+#servises h2 {
+    color: #222;
+}
+
+#servises h3,
+#servises>p {
+    color: #fff;
+}
+
+#servises h4 {
+    position: relative;
+}
+
+#servises h4:after {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 5px 0px;
+
+
+}
+
+.feedback-img {
+    width: 80px;
+    border: 2px solid #f4f4f4;
+    transform: translateY(50%);
+}
+
+.client-feed {
+    border: 2px solid #f4f4f4;
+
+}
+
+.brdr {
+    width: 10%;
+    height: 2px;
+    background-color: var(--main-color);
+    margin: auto;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-indent: 0;
+}
